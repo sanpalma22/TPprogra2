@@ -1,0 +1,5 @@
+1)	InicializarPila: Se crea el espacio para guardar los datos que se necesitan y que se van a manejar.
+2)	Apilar: Se ingresa el dato que se desea guardar en la estructura.
+3)	Desapilar: El último elemento guardado se saca de la estructura y se devuelve.
+4)	Tope: Te devuelve el último elemento guardado de la estructura.
+5)	PilaVacia: Te devuelve si la estructura de datos está vacía o tiene elementos guardados.
