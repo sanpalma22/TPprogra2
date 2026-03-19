@@ -4,8 +4,8 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/usuario1">
-        <img src="https://github.com/usuario1.png" width="80px;" alt="Foto de Nombre 1"/><br />
+      <a href="https://github.com/sanpalma22">
+        <img src="https://github.com/sanpalma22/TPprogra2/blob/main/Integrantes/Santi.jpeg" width="80px;" alt="Foto de Santiago Palma"/><br />
         <sub><b>Nombre 1</b></sub>
       </a><br />
       Rol (Ej: Implementador)
