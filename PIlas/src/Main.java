@@ -38,3 +38,18 @@ public class Main {
         System.out.println();
     }
 }
+
+public static void historialNavegacion(PilaTDA pila) {
+    pila.InicializarPila();
+    pila.Apilar(1); //fi.uba.ar
+    pila.Apilar(2); //campus.utn.edu.ar
+    pila.Apilar(1); //stackoverflow.com
+    System.out.println("Pagina Actual: " + pila.tope());
+
+    //Atras
+    if not pila.PilaVacia():
+        pila.Desapilar()
+        System.out.println("Atras, Pagina Actual: " + pila.tope());
+    
+
+}
