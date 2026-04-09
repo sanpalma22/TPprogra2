@@ -2,6 +2,7 @@ import Implementacion.Estrategia_1;
 import Implementacion.Estrategia_2;
 import Implementacion.Estrategia_3;
 import Interfaces.PilaTDA;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,10 +10,7 @@ public class Main {
         PilaTDA p1 = new Estrategia_1();
         PilaTDA p2 = new Estrategia_2();
         PilaTDA p3 = new Estrategia_3();
-
-        probarPila("Estrategia 1", p1);
-        probarPila("Estrategia 2", p2);
-        probarPila("Estrategia 3", p3);
+        historialNavegacion(p1);
     }
 
     public static void probarPila(String nombre, PilaTDA pila) {
@@ -37,19 +35,20 @@ public class Main {
 
         System.out.println();
     }
-}
+    public static void historialNavegacion(PilaTDA pila) {
+        pila.InicializarPila();
+        pila.Apilar(1); //fi.uba.ar
+        pila.Apilar(2); //campus.utn.edu.ar
+        pila.Apilar(1); //stackoverflow.com
+        System.out.println("Pagina Actual: " + pila.Tope());
 
-public static void historialNavegacion(PilaTDA pila) {
-    pila.InicializarPila();
-    pila.Apilar(1); //fi.uba.ar
-    pila.Apilar(2); //campus.utn.edu.ar
-    pila.Apilar(1); //stackoverflow.com
-    System.out.println("Pagina Actual: " + pila.tope());
+        //Atras
+        if (!pila.PilaVacia()){
+            pila.Desapilar();
+            System.out.println("Atras, Pagina Actual: " + pila.Tope());
+        }
 
-    //Atras
-    if not pila.PilaVacia():
-        pila.Desapilar()
-        System.out.println("Atras, Pagina Actual: " + pila.tope());
-    
+    }
+
 
 }
