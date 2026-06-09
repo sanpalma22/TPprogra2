@@ -1,0 +1,45 @@
+Algoritmo Ejercicio_Pila_TDA
+    Dimension arregloPila[10]
+    Definir tope, opcionMenu, dato Como Entero
+    
+    tope <- 0
+    
+    Repetir
+        Escribir "=== GESTION DE PILA ==="
+        Escribir "1. Apilar"
+        Escribir "2. Desapilar"
+        Escribir "3. Ver Tope"
+        Escribir "4. Ver estado"
+        Escribir "5. Salir"
+        Leer opcionMenu
+        
+        Segun opcionMenu Hacer
+            1:
+                Escribir "Ingrese valor a apilar:"
+                Leer dato
+                Si tope < 10 Entonces
+                    tope <- tope + 1
+                    arregloPila[tope] <- dato
+                    Escribir "Dato apilado."
+                SiNo
+                    Escribir "La pila esta llena."
+                FinSi
+            2:
+                Si tope > 0 Entonces
+                    Escribir "Se saco: ", arregloPila[tope]
+                    tope <- tope - 1
+                SiNo
+                    Escribir "La pila esta vacia."
+                FinSi
+            3:
+                Si tope > 0 Entonces
+                    Escribir "El tope es: ", arregloPila[tope]
+                SiNo
+                    Escribir "La pila esta vacia."
+                FinSi
+            4:
+                Escribir "La pila tiene ", tope, " elementos."
+        FinSegun
+        
+    Hasta Que opcionMenu = 5
+FinAlgoritmo
